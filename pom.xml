@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example.qjs</groupId>
+    <artifactId>eureka-server-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>eureka-server-demo</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <version>1.4.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.5.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--<repositories>-->
+        <!--&lt;!&ndash;<repository>&ndash;&gt;-->
+            <!--&lt;!&ndash;<id>nexus</id>&ndash;&gt;-->
+            <!--&lt;!&ndash;<name>Team Nexus Repository</name>&ndash;&gt;-->
+            <!--&lt;!&ndash;<url>http://nexus.patsnap.com/content/groups/public</url>&ndash;&gt;-->
+        <!--&lt;!&ndash;</repository>&ndash;&gt;-->
+
+        <!--<repository>-->
+            <!--<id>maven2</id>-->
+            <!--<url>http://repo1.maven.org/maven2</url>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+
+</project>
